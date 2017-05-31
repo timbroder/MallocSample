@@ -12,9 +12,16 @@
 		5E9A4C4D1EDEEDF60038572D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9A4C4B1EDEEDF60038572D /* Main.storyboard */; };
 		5E9A4C4F1EDEEDF60038572D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9A4C4E1EDEEDF60038572D /* Assets.xcassets */; };
 		5E9A4C521EDEEDF60038572D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9A4C501EDEEDF60038572D /* LaunchScreen.storyboard */; };
+		5E9A4C5A1EDEEE920038572D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5E9A4C591EDEEE920038572D /* Podfile */; };
+		5E9A4C5C1EDEFBB30038572D /* KidRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A4C5B1EDEFBB30038572D /* KidRealm.swift */; };
+		5E9A4C5E1EDEFC460038572D /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A4C5D1EDEFC460038572D /* UserDataService.swift */; };
+		5E9A4C601EDEFC770038572D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A4C5F1EDEFC770038572D /* Constants.swift */; };
+		5E9A4C621EDEFC8D0038572D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A4C611EDEFC8D0038572D /* User.swift */; };
+		98B5F709C1E50F627E7B9E6A /* Pods_MallocSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479A125ED96929C7F887A479 /* Pods_MallocSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		479A125ED96929C7F887A479 /* Pods_MallocSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MallocSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9A4C441EDEEDF60038572D /* MallocSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MallocSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9A4C471EDEEDF60038572D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E9A4C491EDEEDF60038572D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,13 @@
 		5E9A4C4E1EDEEDF60038572D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E9A4C511EDEEDF60038572D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E9A4C531EDEEDF60038572D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E9A4C591EDEEE920038572D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		5E9A4C5B1EDEFBB30038572D /* KidRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidRealm.swift; sourceTree = "<group>"; };
+		5E9A4C5D1EDEFC460038572D /* UserDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		5E9A4C5F1EDEFC770038572D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E9A4C611EDEFC8D0038572D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D40C4468DA753920201BD168 /* Pods-MallocSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallocSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MallocSample/Pods-MallocSample.release.xcconfig"; sourceTree = "<group>"; };
+		FF7AD0CF3993A344399024AE /* Pods-MallocSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallocSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MallocSample/Pods-MallocSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B5F709C1E50F627E7B9E6A /* Pods_MallocSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BB46827850AF09516347906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				479A125ED96929C7F887A479 /* Pods_MallocSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E9A4C3B1EDEEDF60038572D = {
 			isa = PBXGroup;
 			children = (
 				5E9A4C461EDEEDF60038572D /* MallocSample */,
 				5E9A4C451EDEEDF60038572D /* Products */,
+				94B8C4B18B259E8D94656FEE /* Pods */,
+				5BB46827850AF09516347906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +79,28 @@
 		5E9A4C461EDEEDF60038572D /* MallocSample */ = {
 			isa = PBXGroup;
 			children = (
+				5E9A4C591EDEEE920038572D /* Podfile */,
 				5E9A4C471EDEEDF60038572D /* AppDelegate.swift */,
 				5E9A4C491EDEEDF60038572D /* ViewController.swift */,
 				5E9A4C4B1EDEEDF60038572D /* Main.storyboard */,
 				5E9A4C4E1EDEEDF60038572D /* Assets.xcassets */,
 				5E9A4C501EDEEDF60038572D /* LaunchScreen.storyboard */,
 				5E9A4C531EDEEDF60038572D /* Info.plist */,
+				5E9A4C5B1EDEFBB30038572D /* KidRealm.swift */,
+				5E9A4C5D1EDEFC460038572D /* UserDataService.swift */,
+				5E9A4C5F1EDEFC770038572D /* Constants.swift */,
+				5E9A4C611EDEFC8D0038572D /* User.swift */,
 			);
 			path = MallocSample;
+			sourceTree = "<group>";
+		};
+		94B8C4B18B259E8D94656FEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF7AD0CF3993A344399024AE /* Pods-MallocSample.debug.xcconfig */,
+				D40C4468DA753920201BD168 /* Pods-MallocSample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E9A4C561EDEEDF60038572D /* Build configuration list for PBXNativeTarget "MallocSample" */;
 			buildPhases = (
+				25CDF37BD03BCEE807C7E523 /* [CP] Check Pods Manifest.lock */,
 				5E9A4C401EDEEDF60038572D /* Sources */,
 				5E9A4C411EDEEDF60038572D /* Frameworks */,
 				5E9A4C421EDEEDF60038572D /* Resources */,
+				C41266E7198B15EC64CDE546 /* [CP] Embed Pods Frameworks */,
+				25AD586E58A2EF242BA7F7D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,18 +168,71 @@
 			files = (
 				5E9A4C521EDEEDF60038572D /* LaunchScreen.storyboard in Resources */,
 				5E9A4C4F1EDEEDF60038572D /* Assets.xcassets in Resources */,
+				5E9A4C5A1EDEEE920038572D /* Podfile in Resources */,
 				5E9A4C4D1EDEEDF60038572D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25AD586E58A2EF242BA7F7D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MallocSample/Pods-MallocSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25CDF37BD03BCEE807C7E523 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C41266E7198B15EC64CDE546 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MallocSample/Pods-MallocSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E9A4C401EDEEDF60038572D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E9A4C601EDEFC770038572D /* Constants.swift in Sources */,
 				5E9A4C4A1EDEEDF60038572D /* ViewController.swift in Sources */,
+				5E9A4C621EDEFC8D0038572D /* User.swift in Sources */,
+				5E9A4C5C1EDEFBB30038572D /* KidRealm.swift in Sources */,
+				5E9A4C5E1EDEFC460038572D /* UserDataService.swift in Sources */,
 				5E9A4C481EDEEDF60038572D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,27 +356,33 @@
 		};
 		5E9A4C571EDEEDF60038572D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7AD0CF3993A344399024AE /* Pods-MallocSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RY8MZ29XP2;
 				INFOPLIST_FILE = MallocSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidfund.MallocSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5E9A4C581EDEEDF60038572D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40C4468DA753920201BD168 /* Pods-MallocSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RY8MZ29XP2;
 				INFOPLIST_FILE = MallocSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidfund.MallocSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -304,6 +405,7 @@
 				5E9A4C581EDEEDF60038572D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
